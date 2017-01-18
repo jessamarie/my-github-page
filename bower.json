@@ -1,0 +1,55 @@
+{
+  "name": "jessamarie",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "AngularJS",
+    "angular",
+    "node",
+    "express"
+  ],
+  "authors": [
+    "Jessica Marie Barre"
+  ],
+  "homepage": "https://jessamarie.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jessamarie/jessamarie.github.io.git"
+  },
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "1.0.0-beta.1",
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "animate.css": "latest",
+    "angular": "latest",
+    "angular-fullpage.js": "git://github.com/hellsan631/angular-fullpage.js.git#49c56114e6f07fc3b35169325c5ff64479c7251b"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.0"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.min.css",
+        "dist/js/bootstrap.min.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.min.css"
+      ]
+    },
+    "fullpage.js": {
+      "main": [
+        "dist/jquery.fullpage.min.js",
+        "dist/jquery.fullpage.min.css"
+      ]
+    },
+    "angular-fullpage.js": {
+      "main": [
+        "angular-fullpage.min.js"
+      ]
+    }
+  }
+}

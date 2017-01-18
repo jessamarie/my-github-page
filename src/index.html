@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="AngularJS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jessa Marie</title>
+    <link rel="icon" type="image/png" href=""/>
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+
+    <!-- build:css({.tmp,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp,src}) styles/app.css -->
+    <link rel="stylesheet" href="index.css"/>
+    <!-- endbuild -->
+  </head>
+
+
+  <body ng-app="app">
+
+    <!-- navbar -->
+    <navbar></navbar>
+
+    <div class="container-fluid">
+      <!-- body -->
+      <div class="row">
+
+        <!-- content -->
+        <div ui-view></div>
+      </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer></footer>
+
+  </body>
+
+  <!-- build:js({.tmp,src}) scripts/vendor.js -->
+  <!-- bower:js -->
+  <!-- run `gulp inject` to automatically populate bower script dependencies -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({.tmp,src}) scripts/app.js -->
+  <!-- inject:js -->
+  <!-- js files will be automatically insert here -->
+  <!-- endinject -->
+  <!-- inject:partials -->
+  <!-- angular templates will be automatically converted in js and inserted here -->
+  <!-- endinject -->
+  <!-- endbuild -->
+</html>

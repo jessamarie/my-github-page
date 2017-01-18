@@ -1,0 +1,39 @@
+<nav class="navbar navbar-static-top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+       data-toggle="collapse" data-target="#navbarCollapse"
+       aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand hidden-sm hidden-md hidden-lg" data-menuanchor="home">Jessica Marie</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="nav navbar-nav" id="menu">
+
+        <li ng-repeat="item in nav.left" data-menuanchor="{{item.route}}">
+          <a>
+           {{item.title}}
+          </a>
+        </li>
+
+        <li class="hidden-xs" >
+          <a href="#" id="brand" data-menuanchor="home"> Jessica Marie </a>
+        </li>
+
+        <li ng-repeat="item in nav.right" data-menuanchor="{{item.route}}">
+          <a>
+           {{item.title}}
+          </a>
+        </li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+
+  </div>
+</nav>
