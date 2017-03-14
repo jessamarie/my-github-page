@@ -1,8 +1,8 @@
 <div class="row" ng-controller="ProjectsController as vm">
     <div class="text-center h3 font-bold">Notable Projects</div>
     <br />
-    <div class="row text-center" ng-repeat="item in vm.filteredProjects">
-      <div class="col-md-offset-2 col-xs-6 col-md-3" ng-repeat="i in item">
+    <div class="row" ng-repeat="item in vm.filteredProjects">
+      <div class="padding-box text-center col-md-offset-2 col-xs-6 col-md-3" ng-repeat="i in item">
         <div class="">
           <a href="{{i.repo}}" target="_blank" aria-label="Github">
             <div class="font-bold h4">{{i.name}}</div>

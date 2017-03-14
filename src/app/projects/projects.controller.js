@@ -52,7 +52,7 @@
     /*  for future reference/exploration:
     using ng-repeat="item in vm.projects | ListToMatrix:3"
     in projects.html causes infinite looping  */
-    vm.filteredProjects = $filter('ListToMatrix')(vm.projects, 3);
+    vm.filteredProjects = $filter('ListToMatrix')(vm.projects, 2);
 
   }
 
