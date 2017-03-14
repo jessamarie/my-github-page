@@ -1,4 +1,27 @@
 {
+  "name": "my-github-page",
+  "version": "1.1.0",
+  "description": "My personal portfolio",
+  "main": "",
+  "engines": {
+    "node": "7.2.1"
+  },
+  "author": "Jessica Marie Barre",
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jessamarie/my-github-page"
+  },
+  "bugs": {
+    "url": "https://github.com/jessamarie/my-github-page/issues"
+  },
+  "keywords": [
+    "node",
+    "AngularJS",
+    "gulp",
+    "Bootstrap"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "@types/angular": "^1.5.16",
     "@types/angular-mocks": "^1.5.5",
