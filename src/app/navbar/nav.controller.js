@@ -19,8 +19,8 @@
         icon: '' // change these
       },
       {
-        route: 'about',
-        title: 'About',
+        route: 'skills',
+        title: 'Skills',
         icon: ''
       },
       {
@@ -29,8 +29,8 @@
         icon: ''
       },
       {
-        route: 'contact',
-        title: 'Contact',
+        route: 'links',
+        title: 'Links',
         icon: ''
       }
     ];

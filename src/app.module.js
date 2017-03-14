@@ -3,7 +3,6 @@
   'use strict';
 
   angular.module('app', [
-    'fullPage.js',
     'app.routes',
     'app.footer.directive',
     'app.nav.controller',

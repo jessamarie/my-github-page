@@ -1,13 +1,18 @@
-<div class="row text-center" style="padding-top:100px" ng-controller="ProjectsController">
-
-    <div class="col-sm-offset-2 col-sm-8">
-
-    <h1>Take a look at my latest projects on github!</h1>
-    </br>
-    <a class="btn btn-default" href="https://github.com/jessamarie" aria-label="Github">
-      Github
-    <!--  <i class="fa fa-github fa-5x" aria-hidden="true"></i> -->
-    </a>
-
-  </div>
+<div class="row" ng-controller="ProjectsController as vm">
+    <div class="text-center h3 font-bold">Notable Projects</div>
+    <br />
+    <div class="row text-center" ng-repeat="item in vm.filteredProjects">
+      <div class="col-md-offset-2 col-xs-6 col-md-3" ng-repeat="i in item">
+        <div class="">
+          <a href="{{i.repo}}" target="_blank" aria-label="Github">
+            <div class="font-bold h4">{{i.name}}</div>
+            <br />
+            <div class="h5">{{i.ingredients}}</div>
+            <br />
+            <div class="h6">{{i.description}}</div>
+            <br /><br />
+          </a>
+        </div>
+      </div>
+    </div>
 </div>

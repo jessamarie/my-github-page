@@ -1,4 +1,4 @@
-<nav class="navbar navbar-static-top">
+<nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
 
     <div class="navbar-header">
@@ -16,18 +16,18 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="nav navbar-nav" id="menu">
 
-        <li ng-repeat="item in nav.left" data-menuanchor="{{item.route}}">
-          <a>
+        <li ng-repeat="item in nav.left">
+          <a href="#{{item.route}}">
            {{item.title}}
           </a>
         </li>
 
         <li class="hidden-xs" >
-          <a href="#" id="brand" data-menuanchor="home"> Jessica Marie </a>
+          <a href="#home" id="brand"> Jessica Marie </a>
         </li>
 
-        <li ng-repeat="item in nav.right" data-menuanchor="{{item.route}}">
-          <a>
+        <li ng-repeat="item in nav.right">
+          <a href="#{{item.route}}">
            {{item.title}}
           </a>
         </li>

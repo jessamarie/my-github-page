@@ -6,7 +6,7 @@
 @pink: rgba(217,78,103,1); // #D94E67; // pink
 @brown: rgba(166,133,114,0.6); // #A68572; // brown
 @white: rgba(255,255,255,1);
-@black: rgba(0,0,0,0.1);
+@black: rgba(0,0,0,0.2);
 
 /* LESS CSS */
 
@@ -14,11 +14,19 @@ body {
   font-family:'Open Sans', arial, sans-serif;
   background: @white;
 //  background-image: url('');
-    color: @rose
+    color: @rose;
+    padding-top:65px;
+    margin: 0;
 }
 
-.bottomPadding {
-  padding-bottom: 50px;
+.pinkTheme {
+  background-color: @pink;
+  color: black;
+}
+
+.whiteTheme {
+  background-color: @white;
+  color: @rose;
 }
 
 /***** Navbar ********/
@@ -31,6 +39,7 @@ body {
   width: auto;
   border-bottom: 1px solid @pink;
   padding:0;
+  margin-bottom: 50px;
 }
 
 .navbar-brand {
@@ -42,37 +51,38 @@ body {
   font-size: 30px;
 }
 
-nav a {
+nav ul a {
+  font-size: 20px;
+}
+
+/***** Links ********/
+
+a {
   color: @rose;
   font-style: bold;
 }
 
-.nav li a:focus, .nav li a:hover {
+a:focus, a:hover {
   background-color: @brown;
+  text-decoration: none;
 }
 
 .icon-bar {
   background: @rose;
 }
 
-nav a:hover {
+a:hover {
   color: @pink;
 }
 
-
-nav ul a {
-  font-size: 20px;
-}
-
 /****** Middle Sections ********/
-.section {
-  padding: 10px 30px;
+.section whiteTheme{
+  padding: 30px 0 0 0;
 }
 
-#section0 {
-  padding: 20px 0;
+.font-bold {
+  font-weight:bold;
 }
-
 
 /****** Footer ********/
 
@@ -80,9 +90,14 @@ nav ul a {
   color: @black;
 }
 
-
-
 /***** Media Devices ********/
+
+@media(max-width: 767px) {
+  .mobile {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
 
 @media (min-width: 768px) {
   .navbar-nav {
@@ -98,6 +113,7 @@ nav ul a {
     vertical-align: middle;
     padding: 0 24px;
   }
+
 }
 
 @media (min-width: 992px) {
