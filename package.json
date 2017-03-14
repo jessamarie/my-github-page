@@ -56,7 +56,11 @@
     "serve:dist": "gulp serve:dist",
     "test": "gulp test",
     "test:auto": "gulp test:auto",
-    "bower": "bower"
+    "bower": "bower",
+    "copy:dist":"cp -Rf dist/* ../jessamarie.github.io/",
+    "clean:dist": "rm -rf ../jessamarie.github.io/maps ../jessamarie.github.io/scripts ../jessamarie.github.io/styles ../jessamarie.github.io/index.html",
+    "predeploy": "npm run clean:dist && npm run build",
+    "deploy": "npm run copy:dist"
   },
   "eslintConfig": {
     "globals": {
