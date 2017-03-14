@@ -9,19 +9,26 @@
 @black: rgba(0,0,0,0.2);
 
 /* LESS CSS */
-
-body {
+html, body {
   font-family:'Open Sans', arial, sans-serif;
   background: @white;
 //  background-image: url('');
     color: @rose;
     padding-top:65px;
     margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    max-width: 100%;
+}
+
+.col-sm-12 {
+  padding: 0;
 }
 
 .pinkTheme {
   background-color: @pink;
   color: black;
+  border: 5px solid @pink;
 }
 
 .whiteTheme {
@@ -84,6 +91,10 @@ a:hover {
   font-weight:bold;
 }
 
+.project-box {
+  margin: 0px;
+}
+
 /****** Footer ********/
 
 #footer {
@@ -96,6 +107,10 @@ a:hover {
   .mobile {
     margin-left: 50px;
     margin-right: 50px;
+  }
+
+  body {
+    padding-top:80px;
   }
 }
 
@@ -114,11 +129,24 @@ a:hover {
     padding: 0 24px;
   }
 
+  body {
+    padding-top:80px;
+  }
+
+  .padding-box {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 @media (min-width: 992px) {
   .navbar-nav > li a {
     padding: 0 20px;
+  }
+
+  .padding-box {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
