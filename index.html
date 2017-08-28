@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="AngularJS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jessa Marie</title>
+    <link rel="icon" type="image/png" href=""/>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"></link>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+  </head>
+
+
+  <body ng-app="app">
+
+    <!-- navbar -->
+    <navbar></navbar>
+
+    <div class="container-fluid">
+      <!-- body -->
+      <div class="row">
+
+        <!-- content -->
+        <div ui-view></div>
+      </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer></footer>
+
+    <!-- Scripts -->
+
+    <script src="/node_modules/angular/angular.js" charset="utf-8"></script>
+    <script src="/node_modules/@uirouter/angularjs/release/angular-ui-router.js" charset="utf-8"></script>
+
+    <script src="app/app.module.js" charset="utf-8"></script>
+    <script src="app/app.routes.js" charset="utf-8"></script>
+    <script src="app/about/about.controller.js" charset="utf-8"></script>
+    <script src="app/about/about.directive.js" charset="utf-8"></script>
+    <script src="app/contact/contact.directive.js" charset="utf-8"></script>
+    <script src="app/contact/contact.controller.js" charset="utf-8"></script>
+    <script src="app/footer/footer.directive.js" charset="utf-8"></script>
+    <script src="app/home/home.controller.js" charset="utf-8"></script>
+    <script src="app/home/home.directive.js" charset="utf-8"></script>
+    <script src="app/main/main.controller.js" charset="utf-8"></script>
+    <script src="app/navbar/nav.controller.js" charset="utf-8"></script>
+    <script src="app/navbar/nav.directive.js" charset="utf-8"></script>
+    <script src="app/projects/projects.controller.js" charset="utf-8"></script>
+    <script src="app/projects/projects.directive.js" charset="utf-8"></script>
+
+  </body>
+
+</html>
